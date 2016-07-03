@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">    
+    <!--Load the AJAX API-->
+    <script src="https://www.google.com/jsapi"></script>    
+    <script src="googlecharts-helpers.js"></script>    
+  </head>
+  <body>
+        <div>Select data file: <input type="file" id="inputFileID" /></div>        
+        <script>
+            document.getElementById('inputFileID').addEventListener('change', handleFileSelect, false);            
+        </script>
+        <div id="dashboard_div">
+                <div id="chart_div" style="width: 800px; height: 500px;"></div>
+                <div id="control_div" style="width: 800px; height: 50px;"></div>
+        </div>        
+  </body>
+</html>
